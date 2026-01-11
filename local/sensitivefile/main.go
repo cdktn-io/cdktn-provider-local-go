@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFile",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFile",
 		reflect.TypeOf((*SensitiveFile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFileConfig",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFileConfig",
 		reflect.TypeOf((*SensitiveFileConfig)(nil)).Elem(),
 	)
 }

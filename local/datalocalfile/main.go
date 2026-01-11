@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
 		reflect.TypeOf((*DataLocalFile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFileConfig",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFileConfig",
 		reflect.TypeOf((*DataLocalFileConfig)(nil)).Elem(),
 	)
 }

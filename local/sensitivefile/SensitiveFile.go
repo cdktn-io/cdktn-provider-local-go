@@ -5,10 +5,10 @@ package sensitivefile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-local-go/local/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v11/sensitivefile/internal"
+	"github.com/cdktn-io/cdktn-provider-local-go/local/v11/sensitivefile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -516,7 +516,7 @@ func NewSensitiveFile(scope constructs.Construct, id *string, config *SensitiveF
 	j := jsiiProxy_SensitiveFile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFile",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -529,7 +529,7 @@ func NewSensitiveFile_Override(s SensitiveFile, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFile",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFile",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -679,7 +679,7 @@ func SensitiveFile_GenerateConfigForImport(scope constructs.Construct, importToI
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFile",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFile",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -714,7 +714,7 @@ func SensitiveFile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFile",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func SensitiveFile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFile",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func SensitiveFile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFile",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func SensitiveFile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-local.sensitiveFile.SensitiveFile",
+		"@cdktn/provider-local.sensitiveFile.SensitiveFile",
 		"tfResourceType",
 		&returns,
 	)

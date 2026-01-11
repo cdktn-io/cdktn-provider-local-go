@@ -5,10 +5,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-local-go/local/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v11/provider/internal"
+	"github.com/cdktn-io/cdktn-provider-local-go/local/v11/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -196,7 +196,7 @@ func NewLocalProvider(scope constructs.Construct, id *string, config *LocalProvi
 	j := jsiiProxy_LocalProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-local.provider.LocalProvider",
+		"@cdktn/provider-local.provider.LocalProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -209,7 +209,7 @@ func NewLocalProvider_Override(l LocalProvider, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-local.provider.LocalProvider",
+		"@cdktn/provider-local.provider.LocalProvider",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -233,7 +233,7 @@ func LocalProvider_GenerateConfigForImport(scope constructs.Construct, importToI
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.provider.LocalProvider",
+		"@cdktn/provider-local.provider.LocalProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -268,7 +268,7 @@ func LocalProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.provider.LocalProvider",
+		"@cdktn/provider-local.provider.LocalProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -287,7 +287,7 @@ func LocalProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.provider.LocalProvider",
+		"@cdktn/provider-local.provider.LocalProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -306,7 +306,7 @@ func LocalProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.provider.LocalProvider",
+		"@cdktn/provider-local.provider.LocalProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -319,7 +319,7 @@ func LocalProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-local.provider.LocalProvider",
+		"@cdktn/provider-local.provider.LocalProvider",
 		"tfResourceType",
 		&returns,
 	)

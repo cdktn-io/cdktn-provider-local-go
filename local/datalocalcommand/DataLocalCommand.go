@@ -5,10 +5,10 @@ package datalocalcommand
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-local-go/local/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v11/datalocalcommand/internal"
+	"github.com/cdktn-io/cdktn-provider-local-go/local/v11/datalocalcommand/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -403,7 +403,7 @@ func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLoc
 	j := jsiiProxy_DataLocalCommand{}
 
 	_jsii_.Create(
-		"@cdktf/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -416,7 +416,7 @@ func NewDataLocalCommand_Override(d DataLocalCommand, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -533,7 +533,7 @@ func DataLocalCommand_GenerateConfigForImport(scope constructs.Construct, import
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -568,7 +568,7 @@ func DataLocalCommand_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func DataLocalCommand_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func DataLocalCommand_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func DataLocalCommand_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
 		"tfResourceType",
 		&returns,
 	)

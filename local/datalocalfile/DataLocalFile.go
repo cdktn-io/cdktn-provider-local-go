@@ -5,10 +5,10 @@ package datalocalfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-local-go/local/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v11/datalocalfile/internal"
+	"github.com/cdktn-io/cdktn-provider-local-go/local/v11/datalocalfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -373,7 +373,7 @@ func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalF
 	j := jsiiProxy_DataLocalFile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataLocalFile_Override(d DataLocalFile, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -459,7 +459,7 @@ func DataLocalFile_GenerateConfigForImport(scope constructs.Construct, importToI
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -494,7 +494,7 @@ func DataLocalFile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataLocalFile_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataLocalFile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataLocalFile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
 		"tfResourceType",
 		&returns,
 	)

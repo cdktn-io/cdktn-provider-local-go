@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile",
+		"@cdktn/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile",
 		reflect.TypeOf((*DataLocalSensitiveFile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFileConfig",
+		"@cdktn/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFileConfig",
 		reflect.TypeOf((*DataLocalSensitiveFileConfig)(nil)).Elem(),
 	)
 }

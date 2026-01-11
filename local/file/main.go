@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-local.file.File",
+		"@cdktn/provider-local.file.File",
 		reflect.TypeOf((*File)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-local.file.FileConfig",
+		"@cdktn/provider-local.file.FileConfig",
 		reflect.TypeOf((*FileConfig)(nil)).Elem(),
 	)
 }
