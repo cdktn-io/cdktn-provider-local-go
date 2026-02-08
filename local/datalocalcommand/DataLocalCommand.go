@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datalocalcommand
@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/data-sources/command local_command}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/command local_command}.
 type DataLocalCommand interface {
 	cdktf.TerraformDataSource
 	AllowNonZeroExitCode() interface{}
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataLocalCommand) WorkingDirectoryInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/data-sources/command local_command} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/command local_command} Data Source.
 func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLocalCommandConfig) DataLocalCommand {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLoc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/data-sources/command local_command} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/command local_command} Data Source.
 func NewDataLocalCommand_Override(d DataLocalCommand, scope constructs.Construct, id *string, config *DataLocalCommandConfig) {
 	_init_.Initialize()
 

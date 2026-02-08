@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datalocalfile
@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/data-sources/file local_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/file local_file}.
 type DataLocalFile interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataLocalFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/data-sources/file local_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/file local_file} Data Source.
 func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalFileConfig) DataLocalFile {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.1/docs/data-sources/file local_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/file local_file} Data Source.
 func NewDataLocalFile_Override(d DataLocalFile, scope constructs.Construct, id *string, config *DataLocalFileConfig) {
 	_init_.Initialize()
 
