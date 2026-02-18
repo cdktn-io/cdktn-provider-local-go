@@ -5,16 +5,16 @@ package datalocalcommand
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-local-go/local/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-local-go/local/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-local-go/local/v11/datalocalcommand/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-local-go/local/v12/datalocalcommand/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/command local_command}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.7.0/docs/data-sources/command local_command}.
 type DataLocalCommand interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AllowNonZeroExitCode() interface{}
 	SetAllowNonZeroExitCode(val interface{})
 	AllowNonZeroExitCodeInput() interface{}
@@ -22,7 +22,7 @@ type DataLocalCommand interface {
 	SetArguments(val *[]*string)
 	ArgumentsInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Command() *string
 	SetCommand(val *string)
 	CommandInput() *string
@@ -38,23 +38,23 @@ type DataLocalCommand interface {
 	SetDependsOn(val *[]*string)
 	ExitCode() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Stderr() *string
@@ -63,7 +63,7 @@ type DataLocalCommand interface {
 	StdinInput() *string
 	Stdout() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type DataLocalCommand interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -92,7 +92,7 @@ type DataLocalCommand interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ type DataLocalCommand interface {
 
 // The jsii proxy struct for DataLocalCommand
 type jsiiProxy_DataLocalCommand struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataLocalCommand) AllowNonZeroExitCode() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataLocalCommand) ArgumentsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataLocalCommand) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataLocalCommand) ExitCode() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataLocalCommand) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_DataLocalCommand) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataLocalCommand) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_DataLocalCommand) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataLocalCommand) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_DataLocalCommand) Stdout() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataLocalCommand) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataLocalCommand) WorkingDirectoryInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/command local_command} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.7.0/docs/data-sources/command local_command} Data Source.
 func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLocalCommandConfig) DataLocalCommand {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLoc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs/data-sources/command local_command} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.7.0/docs/data-sources/command local_command} Data Source.
 func NewDataLocalCommand_Override(d DataLocalCommand, scope constructs.Construct, id *string, config *DataLocalCommandConfig) {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DataLocalCommand)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataLocalCommand)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -482,7 +482,7 @@ func (j *jsiiProxy_DataLocalCommand)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataLocalCommand)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +493,7 @@ func (j *jsiiProxy_DataLocalCommand)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataLocalCommand)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -523,14 +523,14 @@ func (j *jsiiProxy_DataLocalCommand)SetWorkingDirectory(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataLocalCommand resource upon running "cdktf plan <stack-name>".
-func DataLocalCommand_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataLocalCommand resource upon running "cdktn plan <stack-name>".
+func DataLocalCommand_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataLocalCommand_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
 		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
@@ -653,11 +653,11 @@ func (d *jsiiProxy_DataLocalCommand) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataLocalCommand) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -781,11 +781,11 @@ func (d *jsiiProxy_DataLocalCommand) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataLocalCommand) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

@@ -1,6 +1,6 @@
-# CDKTF Go bindings for hashicorp/local provider version 2.6.2
+# CDKTN Go bindings for hashicorp/local provider version 2.7.0
 
-This repo builds and publishes the [Terraform local provider](https://registry.terraform.io/providers/hashicorp/local/2.6.2/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform local provider](https://registry.terraform.io/providers/hashicorp/local/2.7.0/docs) bindings for [CDK Terrain](https://cdktn.io).
 
 ## Go Package
 
@@ -18,22 +18,22 @@ Find auto-generated docs for this provider [here](https://github.com/cdktn-io/cd
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform local provider version 1:1. In fact, it always tracks `latest` of `~> 2.1` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdk.tf/imports).
+This project is explicitly not tracking the Terraform local provider version 1:1. In fact, it always tracks `latest` of `~> 2.1` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdktn.io/docs/concepts/providers#import-providers).
 
 These are the upstream dependencies:
 
-* [CDK for Terraform](https://cdk.tf) - Last official release
-* [Terraform local provider](https://registry.terraform.io/providers/hashicorp/local/2.6.2)
+* [CDK Terrain](https://cdktn.io) - Last official release
+* [Terraform local provider](https://registry.terraform.io/providers/hashicorp/local/2.7.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
 
 ## Features / Issues / Bugs
 
-Please report bugs and issues to the [CDK for Terraform](https://cdk.tf) project:
+Please report bugs and issues to the [CDK Terrain](https://cdktn.io) project:
 
-* [Create bug report](https://cdk.tf/bug)
-* [Create feature request](https://cdk.tf/feature)
+* [Create bug report](https://github.com/open-constructs/cdk-terrain/issues)
+* [Create feature request](https://github.com/open-constructs/cdk-terrain/issues)
 
 ## Contributing
 
@@ -43,7 +43,7 @@ This is mostly based on [Projen](https://projen.io), which takes care of generat
 
 ### cdktn-provider-project based on Projen
 
-There's a custom [project builder](https://github.com/cdktn-io/cdktn-provider-project) which encapsulate the common settings for all `cdktf` prebuilt providers.
+There's a custom [project builder](https://github.com/cdktn-io/cdktn-provider-project) which encapsulate the common settings for all `cdktn` prebuilt providers.
 
 
 ### Repository Management

@@ -119,7 +119,7 @@ func (j *jsiiProxy_SensitiveFile) validateSetFilePermissionParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_SensitiveFile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SensitiveFile) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
