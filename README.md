@@ -1,6 +1,6 @@
-# CDKTN Go bindings for hashicorp/local provider version 2.7.0
+# CDKTN Go bindings for hashicorp/local provider version 2.8.0
 
-This repo builds and publishes the [Terraform local provider](https://registry.terraform.io/providers/hashicorp/local/2.7.0/docs) bindings for [CDK Terrain](https://cdktn.io).
+This repo builds and publishes the [Terraform local provider](https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs) bindings for [CDK Terrain](https://cdktn.io).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform local provider version 1:1
 These are the upstream dependencies:
 
 * [CDK Terrain](https://cdktn.io) - Last official release
-* [Terraform local provider](https://registry.terraform.io/providers/hashicorp/local/2.7.0)
+* [Terraform local provider](https://registry.terraform.io/providers/hashicorp/local/2.8.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

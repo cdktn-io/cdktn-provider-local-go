@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.7.0/docs/data-sources/file local_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/file local_file}.
 type DataLocalFile interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -105,6 +105,15 @@ type DataLocalFile interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataLocalFile
@@ -363,7 +372,7 @@ func (j *jsiiProxy_DataLocalFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.7.0/docs/data-sources/file local_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/file local_file} Data Source.
 func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalFileConfig) DataLocalFile {
 	_init_.Initialize()
 
@@ -381,7 +390,7 @@ func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.7.0/docs/data-sources/file local_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/file local_file} Data Source.
 func NewDataLocalFile_Override(d DataLocalFile, scope constructs.Construct, id *string, config *DataLocalFileConfig) {
 	_init_.Initialize()
 
@@ -814,6 +823,24 @@ func (d *jsiiProxy_DataLocalFile) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLocalFile) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 
