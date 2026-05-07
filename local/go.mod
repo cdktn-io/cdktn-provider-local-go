@@ -1,9 +1,9 @@
-module github.com/cdktn-io/cdktn-provider-local-go/local/v12
+module github.com/cdktn-io/cdktn-provider-local-go/local/v13
 
 go 1.25
 
 require (
-	github.com/aws/jsii-runtime-go v1.127.0
-	github.com/open-constructs/cdk-terrain-go/cdktn v0.22.1
+	github.com/aws/jsii-runtime-go v1.129.0
+	github.com/open-constructs/cdk-terrain-go/cdktn v0.23.0
 	github.com/aws/constructs-go/constructs/v10 v10.6.0
 )
