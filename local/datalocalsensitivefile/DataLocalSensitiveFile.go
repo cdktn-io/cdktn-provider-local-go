@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/sensitive_file local_sensitive_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/sensitive_file local_sensitive_file}.
 type DataLocalSensitiveFile interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataLocalSensitiveFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/sensitive_file local_sensitive_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/sensitive_file local_sensitive_file} Data Source.
 func NewDataLocalSensitiveFile(scope constructs.Construct, id *string, config *DataLocalSensitiveFileConfig) DataLocalSensitiveFile {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataLocalSensitiveFile(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/sensitive_file local_sensitive_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/sensitive_file local_sensitive_file} Data Source.
 func NewDataLocalSensitiveFile_Override(d DataLocalSensitiveFile, scope constructs.Construct, id *string, config *DataLocalSensitiveFileConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/resources/file local_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/resources/file local_file}.
 type File interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -539,7 +539,7 @@ func (j *jsiiProxy_File) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/resources/file local_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/resources/file local_file} Resource.
 func NewFile(scope constructs.Construct, id *string, config *FileConfig) File {
 	_init_.Initialize()
 
@@ -557,7 +557,7 @@ func NewFile(scope constructs.Construct, id *string, config *FileConfig) File {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/resources/file local_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/resources/file local_file} Resource.
 func NewFile_Override(f File, scope constructs.Construct, id *string, config *FileConfig) {
 	_init_.Initialize()
 

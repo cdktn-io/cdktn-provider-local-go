@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs local}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs local}.
 type LocalProvider interface {
 	cdktn.TerraformProvider
 	Alias() *string
@@ -195,7 +195,7 @@ func (j *jsiiProxy_LocalProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs local} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs local} Resource.
 func NewLocalProvider(scope constructs.Construct, id *string, config *LocalProviderConfig) LocalProvider {
 	_init_.Initialize()
 
@@ -213,7 +213,7 @@ func NewLocalProvider(scope constructs.Construct, id *string, config *LocalProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs local} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs local} Resource.
 func NewLocalProvider_Override(l LocalProvider, scope constructs.Construct, id *string, config *LocalProviderConfig) {
 	_init_.Initialize()
 

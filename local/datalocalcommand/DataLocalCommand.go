@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/command local_command}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/command local_command}.
 type DataLocalCommand interface {
 	cdktn.TerraformDataSource
 	AllowNonZeroExitCode() interface{}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataLocalCommand) WorkingDirectoryInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/command local_command} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/command local_command} Data Source.
 func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLocalCommandConfig) DataLocalCommand {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLoc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/data-sources/command local_command} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/command local_command} Data Source.
 func NewDataLocalCommand_Override(d DataLocalCommand, scope constructs.Construct, id *string, config *DataLocalCommandConfig) {
 	_init_.Initialize()
 

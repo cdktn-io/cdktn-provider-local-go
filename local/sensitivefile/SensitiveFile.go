@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/resources/sensitive_file local_sensitive_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/resources/sensitive_file local_sensitive_file}.
 type SensitiveFile interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -515,7 +515,7 @@ func (j *jsiiProxy_SensitiveFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/resources/sensitive_file local_sensitive_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/resources/sensitive_file local_sensitive_file} Resource.
 func NewSensitiveFile(scope constructs.Construct, id *string, config *SensitiveFileConfig) SensitiveFile {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewSensitiveFile(scope constructs.Construct, id *string, config *SensitiveF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.8.0/docs/resources/sensitive_file local_sensitive_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/resources/sensitive_file local_sensitive_file} Resource.
 func NewSensitiveFile_Override(s SensitiveFile, scope constructs.Construct, id *string, config *SensitiveFileConfig) {
 	_init_.Initialize()
 
