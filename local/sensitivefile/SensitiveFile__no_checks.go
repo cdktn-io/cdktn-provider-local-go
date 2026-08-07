@@ -59,6 +59,10 @@ func (s *jsiiProxy_SensitiveFile) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveFile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveFile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_SensitiveFile) validateMoveToIdParameters(id *string) error {
 }
 
 func (s *jsiiProxy_SensitiveFile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SensitiveFile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

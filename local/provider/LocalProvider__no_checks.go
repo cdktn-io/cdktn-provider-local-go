@@ -15,6 +15,10 @@ func (l *jsiiProxy_LocalProvider) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (l *jsiiProxy_LocalProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateLocalProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

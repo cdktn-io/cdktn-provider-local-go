@@ -1,7 +1,7 @@
 // Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
-package datalocalfile
+package ephemerallocalcommand
 
 import (
 	"reflect"
@@ -11,24 +11,21 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktn/provider-local.dataLocalFile.DataLocalFile",
-		reflect.TypeOf((*DataLocalFile)(nil)).Elem(),
+		"@cdktn/provider-local.ephemeralLocalCommand.EphemeralLocalCommand",
+		reflect.TypeOf((*EphemeralLocalCommand)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowNonZeroExitCode", GoGetter: "AllowNonZeroExitCode"},
+			_jsii_.MemberProperty{JsiiProperty: "allowNonZeroExitCodeInput", GoGetter: "AllowNonZeroExitCodeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "arguments", GoGetter: "Arguments"},
+			_jsii_.MemberProperty{JsiiProperty: "argumentsInput", GoGetter: "ArgumentsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
+			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "content", GoGetter: "Content"},
-			_jsii_.MemberProperty{JsiiProperty: "contentBase64", GoGetter: "ContentBase64"},
-			_jsii_.MemberProperty{JsiiProperty: "contentBase64Sha256", GoGetter: "ContentBase64Sha256"},
-			_jsii_.MemberProperty{JsiiProperty: "contentBase64Sha512", GoGetter: "ContentBase64Sha512"},
-			_jsii_.MemberProperty{JsiiProperty: "contentMd5", GoGetter: "ContentMd5"},
-			_jsii_.MemberProperty{JsiiProperty: "contentSha1", GoGetter: "ContentSha1"},
-			_jsii_.MemberProperty{JsiiProperty: "contentSha256", GoGetter: "ContentSha256"},
-			_jsii_.MemberProperty{JsiiProperty: "contentSha512", GoGetter: "ContentSha512"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "filename", GoGetter: "Filename"},
-			_jsii_.MemberProperty{JsiiProperty: "filenameInput", GoGetter: "FilenameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "exitCode", GoGetter: "ExitCode"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -41,7 +38,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
@@ -49,7 +45,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowNonZeroExitCode", GoMethod: "ResetAllowNonZeroExitCode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetArguments", GoMethod: "ResetArguments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStdin", GoMethod: "ResetStdin"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkingDirectory", GoMethod: "ResetWorkingDirectory"},
+			_jsii_.MemberProperty{JsiiProperty: "stderr", GoGetter: "Stderr"},
+			_jsii_.MemberProperty{JsiiProperty: "stdin", GoGetter: "Stdin"},
+			_jsii_.MemberProperty{JsiiProperty: "stdinInput", GoGetter: "StdinInput"},
+			_jsii_.MemberProperty{JsiiProperty: "stdout", GoGetter: "Stdout"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -60,15 +64,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
+			_jsii_.MemberProperty{JsiiProperty: "workingDirectory", GoGetter: "WorkingDirectory"},
+			_jsii_.MemberProperty{JsiiProperty: "workingDirectoryInput", GoGetter: "WorkingDirectoryInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataLocalFile{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
+			j := jsiiProxy_EphemeralLocalCommand{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformEphemeralResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktn/provider-local.dataLocalFile.DataLocalFileConfig",
-		reflect.TypeOf((*DataLocalFileConfig)(nil)).Elem(),
+		"@cdktn/provider-local.ephemeralLocalCommand.EphemeralLocalCommandConfig",
+		reflect.TypeOf((*EphemeralLocalCommandConfig)(nil)).Elem(),
 	)
 }

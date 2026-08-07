@@ -3,7 +3,7 @@
 
 //go:build !no_runtime_type_checking
 
-package datalocalcommand
+package ephemerallocalcommand
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-func (d *jsiiProxy_DataLocalCommand) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (d *jsiiProxy_DataLocalCommand) validateAddOverrideParameters(path *string,
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetAnyMapAttributeParameters(terraf
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetBooleanAttributeParameters(terra
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetBooleanMapAttributeParameters(te
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetListAttributeParameters(terrafor
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetNumberAttributeParameters(terraf
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetNumberListAttributeParameters(te
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetNumberMapAttributeParameters(ter
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetStringAttributeParameters(terraf
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLocalCommand) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -106,7 +106,7 @@ func (d *jsiiProxy_DataLocalCommand) validateInterpolationForAttributeParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -114,7 +114,7 @@ func (d *jsiiProxy_DataLocalCommand) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (d *jsiiProxy_DataLocalCommand) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+func (e *jsiiProxy_EphemeralLocalCommand) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	if feature == "" {
 		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
@@ -122,23 +122,7 @@ func (d *jsiiProxy_DataLocalCommand) validateRegisterProviderFeatureUsageParamet
 	return nil
 }
 
-func validateDataLocalCommand_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
-	if scope == nil {
-		return fmt.Errorf("parameter scope is required, but nil was provided")
-	}
-
-	if importToId == nil {
-		return fmt.Errorf("parameter importToId is required, but nil was provided")
-	}
-
-	if importFromId == nil {
-		return fmt.Errorf("parameter importFromId is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateDataLocalCommand_IsConstructParameters(x interface{}) error {
+func validateEphemeralLocalCommand_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +130,7 @@ func validateDataLocalCommand_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataLocalCommand_IsTerraformDataSourceParameters(x interface{}) error {
+func validateEphemeralLocalCommand_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +138,7 @@ func validateDataLocalCommand_IsTerraformDataSourceParameters(x interface{}) err
 	return nil
 }
 
-func validateDataLocalCommand_IsTerraformElementParameters(x interface{}) error {
+func validateEphemeralLocalCommand_IsTerraformEphemeralResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -162,7 +146,7 @@ func validateDataLocalCommand_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_DataLocalCommand) validateSetAllowNonZeroExitCodeParameters(val interface{}) error {
+func (j *jsiiProxy_EphemeralLocalCommand) validateSetAllowNonZeroExitCodeParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -182,7 +166,7 @@ func (j *jsiiProxy_DataLocalCommand) validateSetAllowNonZeroExitCodeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataLocalCommand) validateSetArgumentsParameters(val *[]*string) error {
+func (j *jsiiProxy_EphemeralLocalCommand) validateSetArgumentsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -190,7 +174,7 @@ func (j *jsiiProxy_DataLocalCommand) validateSetArgumentsParameters(val *[]*stri
 	return nil
 }
 
-func (j *jsiiProxy_DataLocalCommand) validateSetCommandParameters(val *string) error {
+func (j *jsiiProxy_EphemeralLocalCommand) validateSetCommandParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -198,7 +182,7 @@ func (j *jsiiProxy_DataLocalCommand) validateSetCommandParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DataLocalCommand) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EphemeralLocalCommand) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,7 +239,7 @@ func (j *jsiiProxy_DataLocalCommand) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataLocalCommand) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EphemeralLocalCommand) validateSetLifecycleParameters(val *cdktn.TerraformEphemeralResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -263,7 +247,7 @@ func (j *jsiiProxy_DataLocalCommand) validateSetLifecycleParameters(val *cdktn.T
 	return nil
 }
 
-func (j *jsiiProxy_DataLocalCommand) validateSetStdinParameters(val *string) error {
+func (j *jsiiProxy_EphemeralLocalCommand) validateSetStdinParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +255,7 @@ func (j *jsiiProxy_DataLocalCommand) validateSetStdinParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DataLocalCommand) validateSetWorkingDirectoryParameters(val *string) error {
+func (j *jsiiProxy_EphemeralLocalCommand) validateSetWorkingDirectoryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -279,7 +263,7 @@ func (j *jsiiProxy_DataLocalCommand) validateSetWorkingDirectoryParameters(val *
 	return nil
 }
 
-func validateNewDataLocalCommandParameters(scope constructs.Construct, id *string, config *DataLocalCommandConfig) error {
+func validateNewEphemeralLocalCommandParameters(scope constructs.Construct, id *string, config *EphemeralLocalCommandConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

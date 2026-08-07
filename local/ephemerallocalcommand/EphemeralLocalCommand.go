@@ -1,20 +1,20 @@
 // Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
-package datalocalcommand
+package ephemerallocalcommand
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktn-io/cdktn-provider-local-go/local/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-local-go/local/v14/datalocalcommand/internal"
+	"github.com/cdktn-io/cdktn-provider-local-go/local/v14/ephemerallocalcommand/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/command local_command}.
-type DataLocalCommand interface {
-	cdktn.TerraformDataSource
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/ephemeral-resources/command local_command}.
+type EphemeralLocalCommand interface {
+	cdktn.TerraformEphemeralResource
 	AllowNonZeroExitCode() interface{}
 	SetAllowNonZeroExitCode(val interface{})
 	AllowNonZeroExitCodeInput() interface{}
@@ -46,9 +46,9 @@ type DataLocalCommand interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktn.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformEphemeralResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformEphemeralResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -118,14 +118,13 @@ type DataLocalCommand interface {
 	ResetWorkingDirectory()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
-	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
 	ToString() *string
-	// Adds this resource to the terraform JSON output.
+	// Adds this ephemeral resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
 	// Applies one or more mixins to this construct.
@@ -139,12 +138,12 @@ type DataLocalCommand interface {
 	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
-// The jsii proxy struct for DataLocalCommand
-type jsiiProxy_DataLocalCommand struct {
-	internal.Type__cdktnTerraformDataSource
+// The jsii proxy struct for EphemeralLocalCommand
+type jsiiProxy_EphemeralLocalCommand struct {
+	internal.Type__cdktnTerraformEphemeralResource
 }
 
-func (j *jsiiProxy_DataLocalCommand) AllowNonZeroExitCode() interface{} {
+func (j *jsiiProxy_EphemeralLocalCommand) AllowNonZeroExitCode() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -154,7 +153,7 @@ func (j *jsiiProxy_DataLocalCommand) AllowNonZeroExitCode() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) AllowNonZeroExitCodeInput() interface{} {
+func (j *jsiiProxy_EphemeralLocalCommand) AllowNonZeroExitCodeInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -164,7 +163,7 @@ func (j *jsiiProxy_DataLocalCommand) AllowNonZeroExitCodeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Arguments() *[]*string {
+func (j *jsiiProxy_EphemeralLocalCommand) Arguments() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -174,7 +173,7 @@ func (j *jsiiProxy_DataLocalCommand) Arguments() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) ArgumentsInput() *[]*string {
+func (j *jsiiProxy_EphemeralLocalCommand) ArgumentsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -184,7 +183,7 @@ func (j *jsiiProxy_DataLocalCommand) ArgumentsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) CdktfStack() cdktn.TerraformStack {
+func (j *jsiiProxy_EphemeralLocalCommand) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
@@ -194,7 +193,7 @@ func (j *jsiiProxy_DataLocalCommand) CdktfStack() cdktn.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Command() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) Command() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -204,7 +203,7 @@ func (j *jsiiProxy_DataLocalCommand) Command() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) CommandInput() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) CommandInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -214,7 +213,7 @@ func (j *jsiiProxy_DataLocalCommand) CommandInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_EphemeralLocalCommand) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -224,7 +223,7 @@ func (j *jsiiProxy_DataLocalCommand) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Count() interface{} {
+func (j *jsiiProxy_EphemeralLocalCommand) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -234,7 +233,7 @@ func (j *jsiiProxy_DataLocalCommand) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) DependsOn() *[]*string {
+func (j *jsiiProxy_EphemeralLocalCommand) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DataLocalCommand) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) ExitCode() *float64 {
+func (j *jsiiProxy_EphemeralLocalCommand) ExitCode() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -254,7 +253,7 @@ func (j *jsiiProxy_DataLocalCommand) ExitCode() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) ForEach() cdktn.ITerraformIterator {
+func (j *jsiiProxy_EphemeralLocalCommand) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DataLocalCommand) ForEach() cdktn.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Fqn() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -274,7 +273,7 @@ func (j *jsiiProxy_DataLocalCommand) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) FriendlyUniqueId() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -284,8 +283,8 @@ func (j *jsiiProxy_DataLocalCommand) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Lifecycle() *cdktn.TerraformResourceLifecycle {
-	var returns *cdktn.TerraformResourceLifecycle
+func (j *jsiiProxy_EphemeralLocalCommand) Lifecycle() *cdktn.TerraformEphemeralResourceLifecycle {
+	var returns *cdktn.TerraformEphemeralResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -294,7 +293,7 @@ func (j *jsiiProxy_DataLocalCommand) Lifecycle() *cdktn.TerraformResourceLifecyc
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Node() constructs.Node {
+func (j *jsiiProxy_EphemeralLocalCommand) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -304,7 +303,7 @@ func (j *jsiiProxy_DataLocalCommand) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Provider() cdktn.TerraformProvider {
+func (j *jsiiProxy_EphemeralLocalCommand) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DataLocalCommand) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) RawOverrides() interface{} {
+func (j *jsiiProxy_EphemeralLocalCommand) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DataLocalCommand) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Stderr() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) Stderr() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -334,7 +333,7 @@ func (j *jsiiProxy_DataLocalCommand) Stderr() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Stdin() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) Stdin() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -344,7 +343,7 @@ func (j *jsiiProxy_DataLocalCommand) Stdin() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) StdinInput() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) StdinInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -354,7 +353,7 @@ func (j *jsiiProxy_DataLocalCommand) StdinInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) Stdout() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) Stdout() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataLocalCommand) Stdout() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_EphemeralLocalCommand) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataLocalCommand) TerraformGeneratorMetadata() *cdktn.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_EphemeralLocalCommand) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataLocalCommand) TerraformMetaArguments() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) TerraformResourceType() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataLocalCommand) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) WorkingDirectory() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) WorkingDirectory() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DataLocalCommand) WorkingDirectory() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalCommand) WorkingDirectoryInput() *string {
+func (j *jsiiProxy_EphemeralLocalCommand) WorkingDirectoryInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -415,17 +414,17 @@ func (j *jsiiProxy_DataLocalCommand) WorkingDirectoryInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/command local_command} Data Source.
-func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLocalCommandConfig) DataLocalCommand {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/ephemeral-resources/command local_command} Ephemeral Resource.
+func NewEphemeralLocalCommand(scope constructs.Construct, id *string, config *EphemeralLocalCommandConfig) EphemeralLocalCommand {
 	_init_.Initialize()
 
-	if err := validateNewDataLocalCommandParameters(scope, id, config); err != nil {
+	if err := validateNewEphemeralLocalCommandParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataLocalCommand{}
+	j := jsiiProxy_EphemeralLocalCommand{}
 
 	_jsii_.Create(
-		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.ephemeralLocalCommand.EphemeralLocalCommand",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -433,18 +432,18 @@ func NewDataLocalCommand(scope constructs.Construct, id *string, config *DataLoc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/data-sources/command local_command} Data Source.
-func NewDataLocalCommand_Override(d DataLocalCommand, scope constructs.Construct, id *string, config *DataLocalCommandConfig) {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.9.0/docs/ephemeral-resources/command local_command} Ephemeral Resource.
+func NewEphemeralLocalCommand_Override(e EphemeralLocalCommand, scope constructs.Construct, id *string, config *EphemeralLocalCommandConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.ephemeralLocalCommand.EphemeralLocalCommand",
 		[]interface{}{scope, id, config},
-		d,
+		e,
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetAllowNonZeroExitCode(val interface{}) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetAllowNonZeroExitCode(val interface{}) {
 	if err := j.validateSetAllowNonZeroExitCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataLocalCommand)SetAllowNonZeroExitCode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetArguments(val *[]*string) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetArguments(val *[]*string) {
 	if err := j.validateSetArgumentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataLocalCommand)SetArguments(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetCommand(val *string) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetCommand(val *string) {
 	if err := j.validateSetCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DataLocalCommand)SetCommand(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetCount(val interface{}) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_DataLocalCommand)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_DataLocalCommand)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetForEach(val cdktn.ITerraformIterator) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -504,7 +503,7 @@ func (j *jsiiProxy_DataLocalCommand)SetForEach(val cdktn.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetLifecycle(val *cdktn.TerraformEphemeralResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_DataLocalCommand)SetLifecycle(val *cdktn.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetProvider(val cdktn.TerraformProvider) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -523,7 +522,7 @@ func (j *jsiiProxy_DataLocalCommand)SetProvider(val cdktn.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetStdin(val *string) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetStdin(val *string) {
 	if err := j.validateSetStdinParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_DataLocalCommand)SetStdin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalCommand)SetWorkingDirectory(val *string) {
+func (j *jsiiProxy_EphemeralLocalCommand)SetWorkingDirectory(val *string) {
 	if err := j.validateSetWorkingDirectoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,25 +542,6 @@ func (j *jsiiProxy_DataLocalCommand)SetWorkingDirectory(val *string) {
 		"workingDirectory",
 		val,
 	)
-}
-
-// Generates CDKTN code for importing a DataLocalCommand resource upon running "cdktn plan <stack-name>".
-func DataLocalCommand_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
-	_init_.Initialize()
-
-	if err := validateDataLocalCommand_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
-		panic(err)
-	}
-	var returns cdktn.ImportableResource
-
-	_jsii_.StaticInvoke(
-		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
-		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
-		&returns,
-	)
-
-	return returns
 }
 
 // Checks if `x` is a construct.
@@ -581,16 +561,16 @@ func DataLocalCommand_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataLocalCommand_IsConstruct(x interface{}) *bool {
+func EphemeralLocalCommand_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataLocalCommand_IsConstructParameters(x); err != nil {
+	if err := validateEphemeralLocalCommand_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.ephemeralLocalCommand.EphemeralLocalCommand",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,35 +580,16 @@ func DataLocalCommand_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataLocalCommand_IsTerraformDataSource(x interface{}) *bool {
+func EphemeralLocalCommand_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataLocalCommand_IsTerraformDataSourceParameters(x); err != nil {
+	if err := validateEphemeralLocalCommand_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
-		"isTerraformDataSource",
-		[]interface{}{x},
-		&returns,
-	)
-
-	return returns
-}
-
-// Experimental.
-func DataLocalCommand_IsTerraformElement(x interface{}) *bool {
-	_init_.Initialize()
-
-	if err := validateDataLocalCommand_IsTerraformElementParameters(x); err != nil {
-		panic(err)
-	}
-	var returns *bool
-
-	_jsii_.StaticInvoke(
-		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.ephemeralLocalCommand.EphemeralLocalCommand",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -637,36 +598,55 @@ func DataLocalCommand_IsTerraformElement(x interface{}) *bool {
 	return returns
 }
 
-func DataLocalCommand_TfResourceType() *string {
+// Experimental.
+func EphemeralLocalCommand_IsTerraformEphemeralResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEphemeralLocalCommand_IsTerraformEphemeralResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-local.ephemeralLocalCommand.EphemeralLocalCommand",
+		"isTerraformEphemeralResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func EphemeralLocalCommand_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktn/provider-local.dataLocalCommand.DataLocalCommand",
+		"@cdktn/provider-local.ephemeralLocalCommand.EphemeralLocalCommand",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) AddOverride(path *string, value interface{}) {
-	if err := d.validateAddOverrideParameters(path, value); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		d,
+		e,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -675,14 +655,14 @@ func (d *jsiiProxy_DataLocalCommand) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
-	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -691,14 +671,14 @@ func (d *jsiiProxy_DataLocalCommand) GetBooleanAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -707,14 +687,14 @@ func (d *jsiiProxy_DataLocalCommand) GetBooleanMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -723,14 +703,14 @@ func (d *jsiiProxy_DataLocalCommand) GetListAttribute(terraformAttribute *string
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -739,14 +719,14 @@ func (d *jsiiProxy_DataLocalCommand) GetNumberAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -755,14 +735,14 @@ func (d *jsiiProxy_DataLocalCommand) GetNumberListAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -771,14 +751,14 @@ func (d *jsiiProxy_DataLocalCommand) GetNumberMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetStringAttribute(terraformAttribute *string) *string {
-	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -787,14 +767,14 @@ func (d *jsiiProxy_DataLocalCommand) GetStringAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -803,14 +783,14 @@ func (d *jsiiProxy_DataLocalCommand) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -819,73 +799,73 @@ func (d *jsiiProxy_DataLocalCommand) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) OverrideLogicalId(newLogicalId *string) {
-	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		d,
+		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataLocalCommand) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
-	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+func (e *jsiiProxy_EphemeralLocalCommand) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := e.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		d,
+		e,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
 	)
 }
 
-func (d *jsiiProxy_DataLocalCommand) ResetAllowNonZeroExitCode() {
+func (e *jsiiProxy_EphemeralLocalCommand) ResetAllowNonZeroExitCode() {
 	_jsii_.InvokeVoid(
-		d,
+		e,
 		"resetAllowNonZeroExitCode",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataLocalCommand) ResetArguments() {
+func (e *jsiiProxy_EphemeralLocalCommand) ResetArguments() {
 	_jsii_.InvokeVoid(
-		d,
+		e,
 		"resetArguments",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataLocalCommand) ResetOverrideLogicalId() {
+func (e *jsiiProxy_EphemeralLocalCommand) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		d,
+		e,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataLocalCommand) ResetStdin() {
+func (e *jsiiProxy_EphemeralLocalCommand) ResetStdin() {
 	_jsii_.InvokeVoid(
-		d,
+		e,
 		"resetStdin",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataLocalCommand) ResetWorkingDirectory() {
+func (e *jsiiProxy_EphemeralLocalCommand) ResetWorkingDirectory() {
 	_jsii_.InvokeVoid(
-		d,
+		e,
 		"resetWorkingDirectory",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataLocalCommand) SynthesizeAttributes() *map[string]interface{} {
+func (e *jsiiProxy_EphemeralLocalCommand) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -894,11 +874,11 @@ func (d *jsiiProxy_DataLocalCommand) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) SynthesizeHclAttributes() *map[string]interface{} {
+func (e *jsiiProxy_EphemeralLocalCommand) SynthesizeHclAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"synthesizeHclAttributes",
 		nil, // no parameters
 		&returns,
@@ -907,11 +887,11 @@ func (d *jsiiProxy_DataLocalCommand) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) ToHclTerraform() interface{} {
+func (e *jsiiProxy_EphemeralLocalCommand) ToHclTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"toHclTerraform",
 		nil, // no parameters
 		&returns,
@@ -920,11 +900,11 @@ func (d *jsiiProxy_DataLocalCommand) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) ToMetadata() interface{} {
+func (e *jsiiProxy_EphemeralLocalCommand) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -933,11 +913,11 @@ func (d *jsiiProxy_DataLocalCommand) ToMetadata() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) ToString() *string {
+func (e *jsiiProxy_EphemeralLocalCommand) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -946,11 +926,11 @@ func (d *jsiiProxy_DataLocalCommand) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) ToTerraform() interface{} {
+func (e *jsiiProxy_EphemeralLocalCommand) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"toTerraform",
 		nil, // no parameters
 		&returns,
@@ -959,7 +939,7 @@ func (d *jsiiProxy_DataLocalCommand) ToTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalCommand) With(mixins ...constructs.IMixin) constructs.IConstruct {
+func (e *jsiiProxy_EphemeralLocalCommand) With(mixins ...constructs.IMixin) constructs.IConstruct {
 	args := []interface{}{}
 	for _, a := range mixins {
 		args = append(args, a)
@@ -968,7 +948,7 @@ func (d *jsiiProxy_DataLocalCommand) With(mixins ...constructs.IMixin) construct
 	var returns constructs.IConstruct
 
 	_jsii_.Invoke(
-		d,
+		e,
 		"with",
 		args,
 		&returns,
